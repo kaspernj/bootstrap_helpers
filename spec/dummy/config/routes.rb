@@ -16,6 +16,7 @@ Rails.application.routes.draw do
         get :disabled_btn
         get :edit_btn
         get :new_btn
+        get :responsive_btn
         get :show_btn
       end
     end

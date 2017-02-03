@@ -12,7 +12,7 @@ $ ->
     for size of sizes
       size_width = sizes[size][0]
       size_height = sizes[size][1]
-      return size if width >= size_width && width < size_height
+      return size if width >= size_width && width <= size_height
 
     throw "Could not figure out the Bootstrap view port from this width: " + width
 

@@ -1,6 +1,25 @@
-.bb-view-port-xs,
-.bb-view-port-sm {
+@include bb-when-sm-down() {
   .bb-btn-responsive[data-bb-icon="true"] .bb-btn-label {
     display: none;
+  }
+}
+
+.bb-btn-responsive {
+  @include bb-when-sm-down() {
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 5px 10px;
+  }
+
+  @include bb-when-xs() {
+    padding: 1px 5px;
+  }
+
+  @include bb-when-lg() {
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.333;
+    padding: 10px 16px;
   }
 }
